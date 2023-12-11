@@ -1,0 +1,8 @@
+.umidade {
+    font-weight: 350;
+    text-align: right;
+}
+
+.textoPrevisao {
+    text-transform: capitalize;
+}

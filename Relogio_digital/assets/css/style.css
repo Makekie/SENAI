@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Caveat, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(24,224,50);
+    background: linear-gradient(210deg, rgba(24,224,50,1) 0%, rgba(9,118,121,1) 50%, rgba(255,0,228,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#relogio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 700px;
+    background: transparent;
+    box-shadow: rgba(240, 46, 170, 0.17) 0px -23px 25px 0px inset, rgba(240, 46, 170, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 500px;
+    
+    }
+
+#relogio div {
+    height: 150 px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(210deg, rgba(9,118,121,1));
+    border-radius: 90px;
+    box-shadow: rgba(240, 46, 170, 0.4) 20px -20px 0px 2px inset, rgba(240, 46, 170, 0.65) 10px -10px 6px -1px inset, rgba(240, 46, 170, 0.08) 5px -5px 0px inset;
+}
+
+span {
+    color: whitesmoke;
+}
+
+#relogio span {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+#relogio .tempo{
+    font-size: 20px;
+}
