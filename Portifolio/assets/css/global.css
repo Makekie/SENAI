@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+main{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+.main::before{
+    content: '';
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140vw;
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main::after{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 140vh;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+body{
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+
+@media only screen and (min-width:768px)
+{
+      .main{
+        max-width: 1024px;
+        margin: 1rem auto;
+      }
+
+    .main::before,
+    .main::after
+    {
+        width: 70vw;
+    }
+
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 45%;
+    top: 25%;
+    width: 600px;
+    height: 300px;
+    background: rgb(212, 31, 31);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
